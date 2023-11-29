@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="Amit Arora" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <link rel="stylesheet" href="./output/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,7 +58,7 @@
     </style>
   </head>
   <body
-    class="bg-bg1 text-tc2 font-rob h-screen max-h-screen w-screen max-w-full flex min-w-0"
+    class="bg-bg1 text-tc2 font-rob h-screen max-h-screen w-screen max-w-full flex min-w-0 hover:transition-all hover:duration-500"
   >
     <!-- ─── Navbar Left ─────────────────────────────────── ✣ ─ -->
     <nav
@@ -652,50 +653,52 @@
                 </div>
               </div>
               <!-- ─── categories────────────────────────────────────────────────────── ✣ ─ -->
-              <div class="hidden lg:flex border-b sm:w-5/6">
-                <!-- ─── Primary────────────────────────────────────────────────────── ✣ ─ -->
-                <div
-                  class="flex items-center flex-1 gap-4 border-b-2 p-5 w-max"
-                >
-                  <img
-                    src="./assets/inbox_fill_white_20dp.png"
-                    alt=""
-                    class=""
-                  />
-                  <p class="text-base font-semibold">Primary</p>
-                </div>
-                <div
-                  class="flex items-center flex-1 gap-3 p-5 w-max cursor-pointer hover:bg-bg3"
-                >
-                  <img
-                    src="./assets/group_baseline_nv200_20dp.png"
-                    alt=""
-                    class="opacity-60"
-                  />
-                  <div class="flex gap-4 items-baseline w-max">
-                    <p class="text-base font-semibold opacity-60">Promotions</p>
-                    <p
-                      class="bg-white rounded-full px-1 font-medium text-tc1 text-xs w-max"
-                    >
-                      50 new
-                    </p>
+              <div class="hidden sm:flex border-b border-zinc-500">
+                <div class="sm:flex w-max md:w-5/6">
+                  <!-- ─── Primary────────────────────────────────────────────────────── ✣ ─ -->
+                  <div
+                    class="flex items-center md:flex-1 sm:gap-1 lg:gap-3 border-b-2 sm:p-3 lg:p-5 w-max"
+                  >
+                    <img
+                      src="./assets/inbox_fill_white_20dp.png"
+                      alt=""
+                      class=""
+                    />
+                    <p class="sm:text-xs lg:text-base font-semibold">Primary</p>
                   </div>
-                </div>
-                <div
-                  class="flex items-center flex-1 gap-3 cursor-pointer p-5 hover:bg-bg3"
-                >
-                  <img
-                    src="./assets/sell_baseline_nv200_20dp.png"
-                    alt=""
-                    class="opacity-60"
-                  />
-                  <div class="flex gap-4 items-baseline">
-                    <p class="text-base font-semibold opacity-60">Social</p>
-                    <p
-                      class="bg-white rounded-full px-1 font-medium text-tc1 text-xs w-max"
-                    >
-                      50 new
-                    </p>
+                  <!-- ─── Promotions ────────────────────────────────────────────────────── ✣ ─ -->
+                  <div
+                    class="flex items-center md:flex-1 sm:gap-1 lg:gap-3 sm:p-2 lg:p-3 w-max cursor-pointer hover:bg-bg3"
+                  >
+                    <img
+                      src="./assets/sell_baseline_nv200_20dp.png"
+                      alt=""
+                      class="opacity-60"
+                    />
+                    <div class="flex gap-4 items-baseline w-max">
+                      <p
+                        class="sm:text-xs lg:text-base font-semibold opacity-60"
+                      >
+                        Promotions
+                      </p>
+                    </div>
+                  </div>
+                  <!-- ─── social ────────────────────────────────────────────────────── ✣ ─ -->
+                  <div
+                    class="flex items-center md:flex-1 sm:gap-1 lg:gap-3 cursor-pointer sm:p-3 lg:p-5 hover:bg-bg3"
+                  >
+                    <img
+                      src="./assets/group_baseline_nv200_20dp.png"
+                      alt=""
+                      class="opacity-60"
+                    />
+                    <div class="flex gap-4 items-baseline">
+                      <p
+                        class="sm:text-xs lg:text-base font-semibold opacity-60"
+                      >
+                        Social
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -870,6 +873,142 @@
                       class="text-xs font-semibold sm:min-w-[140px] lg:min-w-[200px] sm:w-1/3 sm:max-w-[150px] lg:max-w[250px] lg:text-sm border-yellow-300"
                     >
                       Microsoft Newsletter
+                    </p>
+                    <!-- ─── Mail Subject ────────────────────────────────────────────────── ✣ ─ -->
+                    <p
+                      class="text-2xs font-semibold min-w-0 truncate lg:font-medium sm:text-xs lg:text-sm border-blue-600"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <!-- ─── Mail Body ───────────────────────────────────────────────────── ✣ ─ -->
+                    <p
+                      class="text-2xs text-tc2 opacity-60 min-w-0 truncate lg:text-xs"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Est qui fugiat placeat doloribus perferendis deleniti
+                      officiis dolores earum totam suscipit.
+                    </p>
+                  </div>
+                  <!-- ─── time ────────────────────────────────────────────────────────── ✣ ─ -->
+                  <p
+                    class="font-medium text-2xs text-right sm:w-[10%] sm:min-w-[60px] sm:max-w-[90px] lg:text-xs border-orange-400"
+                  >
+                    10:23
+                  </p>
+                </div>
+              </div>
+              <!-- ──────imp Mail ───────────── ✣ ─ -->
+              <div
+                class="flex flex-col w-full min-w-0 px-2 py-1 bg-bg2 border-b border-zinc-600 lg:flex-row lg:justify-between cursor-pointer hover:shadow-shd hover:z-10"
+              >
+                <!-- ─── Buttons ─────────────────────────────────────────────────────── ✣ ─ -->
+                <div class="hidden px-4 lg:flex self-end">
+                  <div
+                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="h-[14px] w-[14px]"
+                    />
+                  </div>
+                  <div
+                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
+                  >
+                    <img src="./assets/star.png" alt="" class="min-w-[20px]" />
+                  </div>
+                  <div
+                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
+                  >
+                    <img
+                      src="./assets/imp-yellow.png"
+                      alt=""
+                      class="min-w-[20px]"
+                    />
+                  </div>
+                </div>
+                <!-- ─── Sender sub Body + Time ────────────────────────────────────────── ✣ ─ -->
+                <div
+                  class="flex flex-1 justify-between items-center min-w-0 border-red-400"
+                >
+                  <!-- ─── Sender Sub Body ─────────────────────────────────────────────── ✣ ─ -->
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-baseline min-w-0 border-green-400"
+                  >
+                    <!-- ─── Mail From ───────────────────────────────────────────────────── ✣ ─ -->
+                    <p
+                      class="text-xs font-semibold sm:min-w-[140px] lg:min-w-[200px] sm:w-1/3 sm:max-w-[150px] lg:max-w[250px] lg:text-sm border-yellow-300"
+                    >
+                      Amanpreet Singh
+                    </p>
+                    <!-- ─── Mail Subject ────────────────────────────────────────────────── ✣ ─ -->
+                    <p
+                      class="text-2xs font-semibold min-w-0 truncate lg:font-medium sm:text-xs lg:text-sm border-blue-600"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <!-- ─── Mail Body ───────────────────────────────────────────────────── ✣ ─ -->
+                    <p
+                      class="text-2xs text-tc2 opacity-60 min-w-0 truncate lg:text-xs"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Est qui fugiat placeat doloribus perferendis deleniti
+                      officiis dolores earum totam suscipit.
+                    </p>
+                  </div>
+                  <!-- ─── time ────────────────────────────────────────────────────────── ✣ ─ -->
+                  <p
+                    class="font-medium text-2xs text-right sm:w-[10%] sm:min-w-[60px] sm:max-w-[90px] lg:text-xs border-orange-400"
+                  >
+                    10:23
+                  </p>
+                </div>
+              </div>
+              <!-- ──────imp read Mail ───────────── ✣ ─ -->
+              <div
+                class="flex flex-col w-full min-w-0 px-2 py-1 bg-bg4 opacity-70 border-b border-zinc-600 lg:flex-row lg:justify-between cursor-pointer hover:shadow-shd hover:z-10"
+              >
+                <!-- ─── Buttons ─────────────────────────────────────────────────────── ✣ ─ -->
+                <div class="hidden px-4 lg:flex self-end">
+                  <div
+                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      class="h-[14px] w-[14px]"
+                    />
+                  </div>
+                  <div
+                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
+                  >
+                    <img src="./assets/star.png" alt="" class="min-w-[20px]" />
+                  </div>
+                  <div
+                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
+                  >
+                    <img
+                      src="./assets/imp-yellow.png"
+                      alt=""
+                      class="min-w-[20px]"
+                    />
+                  </div>
+                </div>
+                <!-- ─── Sender sub Body + Time ────────────────────────────────────────── ✣ ─ -->
+                <div
+                  class="flex flex-1 justify-between items-center min-w-0 border-red-400"
+                >
+                  <!-- ─── Sender Sub Body ─────────────────────────────────────────────── ✣ ─ -->
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-baseline min-w-0 border-green-400"
+                  >
+                    <!-- ─── Mail From ───────────────────────────────────────────────────── ✣ ─ -->
+                    <p
+                      class="text-xs font-semibold sm:min-w-[140px] lg:min-w-[200px] sm:w-1/3 sm:max-w-[150px] lg:max-w[250px] lg:text-sm border-yellow-300"
+                    >
+                      Pw Skills
                     </p>
                     <!-- ─── Mail Subject ────────────────────────────────────────────────── ✣ ─ -->
                     <p
@@ -1278,142 +1417,7 @@
                   </p>
                 </div>
               </div>
-              <!-- ──────imp Mail ───────────── ✣ ─ -->
-              <div
-                class="flex flex-col w-full min-w-0 px-2 py-1 bg-bg2 border-b border-zinc-600 lg:flex-row lg:justify-between cursor-pointer hover:shadow-shd hover:z-10"
-              >
-                <!-- ─── Buttons ─────────────────────────────────────────────────────── ✣ ─ -->
-                <div class="hidden px-4 lg:flex self-end">
-                  <div
-                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
-                  >
-                    <input
-                      type="checkbox"
-                      name=""
-                      id=""
-                      class="h-[14px] w-[14px]"
-                    />
-                  </div>
-                  <div
-                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
-                  >
-                    <img src="./assets/star.png" alt="" class="min-w-[20px]" />
-                  </div>
-                  <div
-                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
-                  >
-                    <img
-                      src="./assets/imp-yellow.png"
-                      alt=""
-                      class="min-w-[20px]"
-                    />
-                  </div>
-                </div>
-                <!-- ─── Sender sub Body + Time ────────────────────────────────────────── ✣ ─ -->
-                <div
-                  class="flex flex-1 justify-between items-center min-w-0 border-red-400"
-                >
-                  <!-- ─── Sender Sub Body ─────────────────────────────────────────────── ✣ ─ -->
-                  <div
-                    class="flex flex-col sm:flex-row sm:items-baseline min-w-0 border-green-400"
-                  >
-                    <!-- ─── Mail From ───────────────────────────────────────────────────── ✣ ─ -->
-                    <p
-                      class="text-xs font-semibold sm:min-w-[140px] lg:min-w-[200px] sm:w-1/3 sm:max-w-[150px] lg:max-w[250px] lg:text-sm border-yellow-300"
-                    >
-                      Amanpreet Singh
-                    </p>
-                    <!-- ─── Mail Subject ────────────────────────────────────────────────── ✣ ─ -->
-                    <p
-                      class="text-2xs font-semibold min-w-0 truncate lg:font-medium sm:text-xs lg:text-sm border-blue-600"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <!-- ─── Mail Body ───────────────────────────────────────────────────── ✣ ─ -->
-                    <p
-                      class="text-2xs text-tc2 opacity-60 min-w-0 truncate lg:text-xs"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Est qui fugiat placeat doloribus perferendis deleniti
-                      officiis dolores earum totam suscipit.
-                    </p>
-                  </div>
-                  <!-- ─── time ────────────────────────────────────────────────────────── ✣ ─ -->
-                  <p
-                    class="font-medium text-2xs text-right sm:w-[10%] sm:min-w-[60px] sm:max-w-[90px] lg:text-xs border-orange-400"
-                  >
-                    10:23
-                  </p>
-                </div>
-              </div>
-              <!-- ──────imp read Mail ───────────── ✣ ─ -->
-              <div
-                class="flex flex-col w-full min-w-0 px-2 py-1 bg-bg4 opacity-70 border-b border-zinc-600 lg:flex-row lg:justify-between cursor-pointer hover:shadow-shd hover:z-10"
-              >
-                <!-- ─── Buttons ─────────────────────────────────────────────────────── ✣ ─ -->
-                <div class="hidden px-4 lg:flex self-end">
-                  <div
-                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
-                  >
-                    <input
-                      type="checkbox"
-                      name=""
-                      id=""
-                      class="h-[14px] w-[14px]"
-                    />
-                  </div>
-                  <div
-                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
-                  >
-                    <img src="./assets/star.png" alt="" class="min-w-[20px]" />
-                  </div>
-                  <div
-                    class="p-2 flex justify-center items-center rounded-full hover:bg-bg3 hover:cursor-pointer"
-                  >
-                    <img
-                      src="./assets/imp-yellow.png"
-                      alt=""
-                      class="min-w-[20px]"
-                    />
-                  </div>
-                </div>
-                <!-- ─── Sender sub Body + Time ────────────────────────────────────────── ✣ ─ -->
-                <div
-                  class="flex flex-1 justify-between items-center min-w-0 border-red-400"
-                >
-                  <!-- ─── Sender Sub Body ─────────────────────────────────────────────── ✣ ─ -->
-                  <div
-                    class="flex flex-col sm:flex-row sm:items-baseline min-w-0 border-green-400"
-                  >
-                    <!-- ─── Mail From ───────────────────────────────────────────────────── ✣ ─ -->
-                    <p
-                      class="text-xs font-semibold sm:min-w-[140px] lg:min-w-[200px] sm:w-1/3 sm:max-w-[150px] lg:max-w[250px] lg:text-sm border-yellow-300"
-                    >
-                      Pw Skills
-                    </p>
-                    <!-- ─── Mail Subject ────────────────────────────────────────────────── ✣ ─ -->
-                    <p
-                      class="text-2xs font-semibold min-w-0 truncate lg:font-medium sm:text-xs lg:text-sm border-blue-600"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <!-- ─── Mail Body ───────────────────────────────────────────────────── ✣ ─ -->
-                    <p
-                      class="text-2xs text-tc2 opacity-60 min-w-0 truncate lg:text-xs"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Est qui fugiat placeat doloribus perferendis deleniti
-                      officiis dolores earum totam suscipit.
-                    </p>
-                  </div>
-                  <!-- ─── time ────────────────────────────────────────────────────────── ✣ ─ -->
-                  <p
-                    class="font-medium text-2xs text-right sm:w-[10%] sm:min-w-[60px] sm:max-w-[90px] lg:text-xs border-orange-400"
-                  >
-                    10:23
-                  </p>
-                </div>
-              </div>
+
               <!-- ────── Mail ───────────── ✣ ─ -->
               <div
                 class="flex flex-col w-full min-w-0 px-2 py-1 bg-bg2 border-b border-zinc-600 lg:flex-row lg:justify-between cursor-pointer hover:shadow-shd hover:z-10"

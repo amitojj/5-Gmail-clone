@@ -943,6 +943,11 @@ h6 {
   border-color: rgb(253 224 71 / var(--tw-border-opacity));
 }
 
+.border-zinc-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(113 113 122 / var(--tw-border-opacity));
+}
+
 .border-zinc-600 {
   --tw-border-opacity: 1;
   border-color: rgb(82 82 91 / var(--tw-border-opacity));
@@ -1020,10 +1025,6 @@ h6 {
   padding: 1rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1032,11 +1033,6 @@ h6 {
 .px-0\.5 {
   padding-left: 0.125rem;
   padding-right: 0.125rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .px-2 {
@@ -1144,11 +1140,6 @@ h6 {
 
 .text-\[8px\] {
   font-size: 8px;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -1266,6 +1257,16 @@ h6 {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:transition-all:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:duration-500:hover {
+  transition-duration: 500ms;
+}
+
 .group\/dots:hover .group-hover\/dots\:block {
   display: block;
 }
@@ -1302,10 +1303,6 @@ h6 {
 
   .sm\:w-1\/5 {
     width: 20%;
-  }
-
-  .sm\:w-5\/6 {
-    width: 83.333333%;
   }
 
   .sm\:w-\[10\%\] {
@@ -1357,6 +1354,18 @@ h6 {
     justify-content: flex-end;
   }
 
+  .sm\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .sm\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .sm\:p-3 {
+    padding: 0.75rem;
+  }
+
   .sm\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -1392,6 +1401,10 @@ h6 {
 @media (min-width: 768px) {
   .md\:w-5\/6 {
     width: 83.333333%;
+  }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
   }
 
   .md\:gap-3 {
@@ -1460,12 +1473,24 @@ h6 {
     justify-content: space-between;
   }
 
+  .lg\:gap-3 {
+    gap: 0.75rem;
+  }
+
   .lg\:gap-4 {
     gap: 1rem;
   }
 
   .lg\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .lg\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .lg\:p-5 {
+    padding: 1.25rem;
   }
 
   .lg\:px-1 {
